@@ -9,8 +9,6 @@ class Nim < Formula
 
   def install
     system "/bin/sh", "build.sh"
-    system "/bin/sh", "install.sh", prefix
-    (prefix/"nim").install "compiler"
-    bin.install_symlink prefix/"nim/bin/nim"
+    prefix.install "compiler", "bin", "lib", "config", "doc"
   end
 end
