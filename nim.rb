@@ -3,9 +3,9 @@ require 'formula'
 class Nim < Formula
   homepage "http://nim-lang.org/"
 
-  url "http://nim-lang.org/download/nim-0.11.0.tar.xz"
-  sha1 '5cbad487c94d0dd4b8cbd52486dd43b1ccf671fb'
-  version "0.11.0"
+  url "http://nim-lang.org/download/nim-0.11.2.tar.xz"
+  sha1 '2693022e35e31196d14ec2d1fbf11a90abac34cf'
+  version "0.11.2"
 
   def install
     system "/bin/sh", "build.sh"
